@@ -18,7 +18,7 @@ pipeline {
             steps {
                 //sh 'mvn -Dmaven.test.failure.ignore=true install' 
                // sh 'mvn -B -DskipTests clean package'
-                mvn clean install
+               sh mvn clean install
             }
             post {
                 success {
